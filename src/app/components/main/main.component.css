@@ -1,0 +1,14 @@
+.cont div {
+
+  width: 600px;
+  height: 400px;
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cont {
+  display: flex;
+}

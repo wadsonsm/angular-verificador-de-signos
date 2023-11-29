@@ -1,6 +1,18 @@
-<div class="mb-3 col-sm-3" style="padding-left: 10px;">
-  <label for="nome" class="form-label" >Diga seu nome: </label>
-  <input type="email" class="form-control" id="nome" placeholder="Nome">
-  <label for="nascimento" class="form-label">Diga sua data de nascimento: </label> <br>
-  <ngb-datepicker #d></ngb-datepicker>
+<div class="cont">
+    <div>
+      <form>
+        <label for="nome" class="form-label">Diga seu nome: </label>
+        <input type="email" class="form-control" id="nome" [ngModel]="pessoa.nome" placeholder="Nome">
+        <label for="nascimento" class="form-label">Diga sua data de nascimento: </label> <br>
+        <ngb-datepicker #nascimento [ngModel]="pessoa.nascimento"></ngb-datepicker>
+        <button class="btn btn-primary  col-sm-12" style="margin-top: 10px;" (click)="send()">Verificar</button>
+      </form>
+    </div>
+    <div>
+      <app-result></app-result>
+    </div>
 </div>
+
+
+
+
