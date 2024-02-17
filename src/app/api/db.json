@@ -1,0 +1,93 @@
+{
+  "signos" : [
+
+  {
+    "id":1,
+    "nomeSigno": "aquario",
+    "caracteristicas": "Um aquariano ou uma aquariana pode se identificar com características como o desejo de inovar e a independência",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47246.png"
+  },{
+
+    "id":2,
+    "nomeSigno": "peixes",
+    "caracteristicas": "Quem nasce com o sol no signo de Peixes pode se identificar com virtudes como a sensibilidade e a intuição.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47160.png"
+  },{
+
+    "id":3,
+    "nomeSigno": "aries",
+    "caracteristicas": "Quem tem Sol no signo de Áries pode se identificar com características como a impulsividade e a coragem.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47290.png"
+  },
+  {
+
+    "id":4,
+    "nomeSigno": "touro",
+    "caracteristicas": "Quem nasce com o sol no signo Touro pode se identificar com virtudes como a paciência, o bom gosto e a sensualidade.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/42/42108.png"
+  },
+  {
+
+    "id":5,
+    "nomeSigno": "gemeos",
+    "caracteristicas": "Quem nasce com o sol no signo de Gêmeos geralmente se identifica com características como a curiosidade, a inteligência e o desejo de liberdade. ",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/1994/1994915.png"
+  },
+  {
+
+    "id":6,
+    "nomeSigno": "cancer",
+    "caracteristicas": "Quem nasce com o sol no signo de Câncer pode se identificar com características como a sensibilidade e o carinho",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47412.png"
+  },
+  {
+
+    "id":7,
+    "nomeSigno": "leao",
+    "caracteristicas": "Quem nasce com o sol no signo Leão pode se identificar com características como a criatividade e a coragem.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47337.png"
+  },
+  {
+    "id":8,
+    "nomeSigno": "virgem",
+    "caracteristicas": "Quem nasce com o Sol no signo Virgem pode se identificar com características como a objetividade e a organização",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/1994/1994953.png"
+  },
+  {
+
+    "id":9,
+    "nomeSigno": "libra",
+    "caracteristicas": "Quem nasce com o sol no signo Libra, em geral, se identifica com características como a cortesia, a delicadeza e a busca constante pelo equilíbrio",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47117.png"
+  },
+  {
+
+    "id":10,
+    "nomeSigno": "escorpiao",
+    "caracteristicas": "Quem nasce com o sol no signo Escorpião pode se identificar com características como a intensidade e o poder de transformação.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/47/47128.png"
+  },
+  {
+
+    "id":11,
+    "nomeSigno": "sagitario",
+    "caracteristicas": "Quem nasce com o sol no signo de Sagitário pode se identificar com características como o otimismo e o desejo de liberdade.",
+    "urlImage": "https://cdn-icons-png.flaticon.com/512/75/75522.png"
+  }
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
