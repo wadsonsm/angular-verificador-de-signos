@@ -8,8 +8,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './components/main/main.component';
 import { FormsModule } from '@angular/forms';
-import { ResultComponent } from './components/result/result.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AlertMessagesComponent } from './components/alert-messages/alert-messages.component';
+import { ZodiacComponent } from './components/zodiac/zodiac.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    ResultComponent
+    AlertMessagesComponent,
+    ZodiacComponent
   ],
   imports: [
     BrowserModule,

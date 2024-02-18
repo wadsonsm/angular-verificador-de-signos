@@ -1,6 +1,7 @@
 import { ResultService } from 'src/app/services/result.service';
 import { Pessoa } from '../../Models/pessoa';
 import { Component, OnInit } from '@angular/core';
+import { pessoaSignoRetorno } from 'src/app/Models/pessoaSignoRetorno';
 
 
 @Component({
@@ -16,8 +17,17 @@ export class MainComponent implements OnInit {
     nascimento: ''
   }
 
-  nasc!: any;
+  pessoaSignoRetorno: pessoaSignoRetorno = {
+    nomePessoa: '',
+    nomeSigno: '',
+    caracteristicas: '',
+    imagem: ''
+  }
+
+  nasc: any = 0;
   result!: any;
+  indice: number = 0;
+  isVisible: boolean =  false;
 
   constructor(private service: ResultService) { }
 
@@ -25,20 +35,28 @@ export class MainComponent implements OnInit {
 
   send() {
 
-    this.checkDate(this.nasc);
+    if (this.pessoa.nome == '' || this.nasc == 0) {
+      alert('favor preencher o nome e data de nascimento');
+      return false;
+    }
 
-    this.service.buscarTudo().subscribe((listar) => {
+    this.indice = this.checkDate(this.nasc);
+
+    this.service.buscarPorId(this.indice).subscribe((listar) => {
       this.result = listar
       console.log(this.result)
+      this.returnResult(this.result, this.pessoa.nome);
+      this.isVisible = true;
     });
-
+    return true;
   }
 
   checkDate(nasc: any): number {
 
     let day = '0' + this.nasc['day'].toString();
     console.log(day + ' dia');
-    let time = this.nasc['month'].toString() + day.toString();
+    let timeString = this.nasc['month'].toString() + day.toString();
+    let time = parseInt(timeString);
     console.log(time.toString());
 
     if (time >= 121 && time <= 218) {
@@ -90,5 +108,18 @@ export class MainComponent implements OnInit {
       return 12;
     }
     return 0;
+  }
+
+  returnResult(result: any, pessoaNome: string) {
+
+    this.pessoaSignoRetorno.nomePessoa = pessoaNome,
+    this.pessoaSignoRetorno.nomeSigno = result.nomeSigno,
+    this.pessoaSignoRetorno.caracteristicas = result.caracteristicas,
+      this.pessoaSignoRetorno.imagem = result.urlImage
+
+    console.log(this.pessoaSignoRetorno)
+
+    return this.pessoaSignoRetorno;
+
   }
 }

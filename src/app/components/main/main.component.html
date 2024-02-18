@@ -1,4 +1,6 @@
-<div class="cont">
+<app-alert-messages></app-alert-messages>
+
+<div class="cont"  *ngIf="!isVisible">
   <div>
     <form>
       <label for="nome-pessoa" class="form-label">Diga seu nome: </label>
@@ -9,6 +11,23 @@
     </form>
   </div>
   <div>
-    <app-result></app-result>
+    <app-zodiac></app-zodiac>
+  </div>
+</div>
+
+<div >
+  <img src= />
+  <p>
+     ,
+  </p>
+</div>
+
+<div class="card cardResult" style="width:400px" *ngIf="isVisible">
+  <img class="card-img-top" src={{pessoaSignoRetorno.imagem}} alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{pessoaSignoRetorno.nomePessoa}}</h4>
+    <p class="card-text">você é do signo de {{pessoaSignoRetorno.nomeSigno}}
+      e {{pessoaSignoRetorno.caracteristicas}}</p>
+    <a href="#" class="btn btn-secondary" onclick="location.reload()">Retorna</a>
   </div>
 </div>

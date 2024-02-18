@@ -12,3 +12,11 @@
 .cont {
   display: flex;
 }
+
+.cardResult{
+  text-align: center;
+}
+
+.cardResult img{
+  width: 200px;
+}
