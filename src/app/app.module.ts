@@ -9,7 +9,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './components/main/main.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AlertMessagesComponent } from './components/alert-messages/alert-messages.component';
 import { ZodiacComponent } from './components/zodiac/zodiac.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { ZodiacComponent } from './components/zodiac/zodiac.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    AlertMessagesComponent,
     ZodiacComponent
   ],
   imports: [
